@@ -118,7 +118,7 @@ function pep_ccd_settingALL(K, nblocks, L, h)
     G_val = [value.(G[j]) for j in 1:nblocks]
     return objective, G_val
 end
-
+#-------------- test ----------------------------------------------------
 K = 2 # total number of iterates
 nblocks = 2 # number of blocks
 L = [1,1] # vector of smoothness constants
@@ -732,4 +732,5 @@ K = 2 # total number of steps for CCD
 nblocks = 2 # number of blocks of coordinates
 L = [1,1] # vector of smoothness constants
 h = 1 # step size
+
 obj = pep_ccd_lb(K, nblocks, L, h)[1]
